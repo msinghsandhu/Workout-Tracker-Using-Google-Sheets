@@ -26,3 +26,40 @@ If successful, a confirmation pop-up appears ✅.
 
 If the API request fails, an error message is displayed 🚨.
 
+## 🛠️ Setup Instructions
+### 1️⃣ Get API Keys & Endpoints 🔑
+Before running the project, create API credentials for Nutritionix & Sheetly:
+
+Nutritionix API 🥗:
+
+Sign up at Nutritionix Developer
+
+Create an app & get APP_ID and API_KEY 🔑
+
+Obtain the API endpoint for exercise data.
+
+Sheetly API 📊:
+
+Sign up at Sheetly and connect it to Google Sheets.
+
+Create an endpoint that allows POST requests to store workout data.
+
+### 2️⃣ Store API Credentials Securely 🔒
+Create a .env file in your project directory & add your credentials:
+SECRET_APP_ID=your_nutritionix_app_id
+SECRET_API_KEY=your_nutritionix_api_key
+SECRET_NUTRITIONIX_ENDPOINT=https://trackapi.nutritionix.com/v2/natural/exercise
+SECRET_SHEET_ENDPOINT=your_sheetly_endpoint
+
+### 3️⃣ Install Dependencies 📦
+Ensure you have the required Python libraries installed:
+pip install requests python-dotenv tk
+
+### 4️⃣ Run the Application 🚀
+Execute the script using:
+python workout_logger.py
+
+## 🚀 Future Improvements
+🔹 Add data visualization 📈 (e.g., workout trends over time).
+🔹 Implement user authentication 🔑 for personalized tracking.
+🔹 Support multiple exercise inputs in a single request.
